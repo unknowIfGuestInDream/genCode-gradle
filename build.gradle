@@ -1,0 +1,43 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.newangels'
+version = '3.2'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+    implementation 'com.alibaba:druid-spring-boot-starter:1.2.8'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation('org.springframework.boot:spring-boot-starter-web', {
+        exclude module: 'spring-boot-starter-tomcat'
+    })
+    implementation 'org.springframework.boot:spring-boot-starter-undertow'
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
+    implementation 'mysql:mysql-connector-java:5.1.35'
+    implementation fileTree(dir: 'src/main/resources/lib', includes: ['*jar'])
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
