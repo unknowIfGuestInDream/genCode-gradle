@@ -1,4 +1,4 @@
-package com.newangels.gen;
+package com.newangels.gen.screw;
 
 import cn.smallbun.screw.core.Configuration;
 import cn.smallbun.screw.core.engine.EngineConfig;

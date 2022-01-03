@@ -4,7 +4,6 @@ import com.newangels.gen.annotation.Log;
 import com.newangels.gen.base.BaseUtils;
 import com.newangels.gen.service.RpcService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,15 +29,6 @@ public class GitInfoController {
     @Log
     public Map<String, Object> getGitInfo() throws IOException {
         return BaseUtils.success(rpcService.getGitInfo());
-    }
-
-    /**
-     * 获取项目配置信息
-     */
-    @GetMapping("getGenProperty")
-    @Log
-    public Map<String, Object> getGenProperty() throws IOException {
-        return BaseUtils.success(rpcService.getGenProperty());
     }
 
 }
