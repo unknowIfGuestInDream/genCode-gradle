@@ -1,6 +1,8 @@
 ## 项目介绍
 本项目为代码生成系统gradle版本
 
+[gradle安装](https://www.tlcsdm.com/#/springBootDemo/deploy/Gradle)
+
 本项目功能：
 1. 存储过程生成java代码
 2. 根据表生成存储过程
