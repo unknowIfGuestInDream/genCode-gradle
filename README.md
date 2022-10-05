@@ -1,5 +1,5 @@
 ## 项目介绍
-本项目为代码生成系统gradle版本
+本项目为代码生成系统genCode-3.3的gradle版本
 
 [gradle安装](https://www.tlcsdm.com/#/springBootDemo/deploy/Gradle)
 
