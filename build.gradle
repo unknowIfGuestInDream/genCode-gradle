@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-freemarker'
-    implementation 'com.alibaba:druid-spring-boot-starter:1.2.13'
+    implementation 'com.alibaba:druid-spring-boot-starter:1.2.13-SNSAPSHOT'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
