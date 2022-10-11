@@ -41,5 +41,5 @@ jobs:
       uses: gradle/gradle-build-action@v2
 
     - name: Execute Gradle build
-      run: bash ./gradlew build -x test
+      run: bash ./gradlew build -x test -Pnocheck --continue
 

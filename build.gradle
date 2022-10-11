@@ -15,7 +15,7 @@ configurations {
     }
 }
 
-bootJar{
+bootJar {
     archiveFileName = 'gen.jar'
 }
 
@@ -47,8 +47,8 @@ test {
     useJUnitPlatform()
 }
 
-allprojects {
-    tasks.withType(io.spring.javaformat.gradle.tasks.CheckFormat).all {
-        enabled = false;
+tasks.forEach(t->{
+    if(t.getName().matches("checkFormat[A-Za-z]*")){
+        t.onlyIf {!project.hasProperty('nocheck')}
     }
-}
+})
