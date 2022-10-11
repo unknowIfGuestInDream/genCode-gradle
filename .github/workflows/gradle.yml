@@ -32,7 +32,9 @@ jobs:
         java-version: ${{ matrix.Java }}
         distribution: temurin
         cache: gradle
+
     - name: Check spring-javaformat
+      if: ${{ matrix.os != 'windows' }}
       run: gradle checkFormat
 
     - name: Build with Gradle
