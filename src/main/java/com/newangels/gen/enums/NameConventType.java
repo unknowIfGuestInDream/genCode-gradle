@@ -10,39 +10,42 @@ import org.apache.commons.lang3.StringUtils;
  * @since: 1.0
  */
 public enum NameConventType {
-    /**
-     * 常用规范
-     */
-    COMMON("1", "大连常用规范"),
 
-    /**
-     * EAM3期常用规范
-     */
-    EAM3("2", "EAM3期规范");
+	/**
+	 * 常用规范
+	 */
+	COMMON("1", "大连常用规范"),
 
-    private String code;
-    private String desc;
+	/**
+	 * EAM3期常用规范
+	 */
+	EAM3("2", "EAM3期规范");
 
-    NameConventType(String code, String desc) {
-        this.code = code;
-        this.desc = desc;
-    }
+	private String code;
 
-    //跟据规范编码获取规范
-    public static NameConventType fromCode(String typeName) {
-        for (NameConventType type : NameConventType.values()) {
-            if (StringUtils.isNotEmpty(typeName) && type.getCode().equals(typeName)) {
-                return type;
-            }
-        }
-        return EAM3;
-    }
+	private String desc;
 
-    public String getCode() {
-        return this.code;
-    }
+	NameConventType(String code, String desc) {
+		this.code = code;
+		this.desc = desc;
+	}
 
-    public String getDesc() {
-        return this.desc;
-    }
+	// 跟据规范编码获取规范
+	public static NameConventType fromCode(String typeName) {
+		for (NameConventType type : NameConventType.values()) {
+			if (StringUtils.isNotEmpty(typeName) && type.getCode().equals(typeName)) {
+				return type;
+			}
+		}
+		return EAM3;
+	}
+
+	public String getCode() {
+		return this.code;
+	}
+
+	public String getDesc() {
+		return this.desc;
+	}
+
 }
