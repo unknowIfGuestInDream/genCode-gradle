@@ -34,8 +34,8 @@ jobs:
         cache: gradle
 
     - name: Check spring-javaformat
-      if: ${{ matrix.os }} != 'windows'
-      run: gradle checkFormat
+#      if: ${{ matrix.os }} != 'windows'
+      run: echo Run ${{ matrix.os }}
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
