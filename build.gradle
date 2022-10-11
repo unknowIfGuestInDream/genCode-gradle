@@ -46,3 +46,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+allprojects {
+    tasks.withType(io.spring.javaformat.gradle.tasks.CheckFormat).all {
+        enabled = false;
+    }
+}
