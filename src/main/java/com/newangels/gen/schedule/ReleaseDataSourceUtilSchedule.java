@@ -29,8 +29,9 @@ public class ReleaseDataSourceUtilSchedule {
 	// 每周五23点执行
 	@Scheduled(cron = "0 0 23 ? * FRI")
 	public void dataSourceUtilScheduled() {
-		if (!genProperty.getSchedule())
+		if (!genProperty.getSchedule()) {
 			return;
+		}
 		DataSourceUtilFactory.removeAll();
 		log.info("[{}]清除数据源工厂数据", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH时mm分ss秒")));
 	}

@@ -40,9 +40,10 @@ public class ScrewTest {
 	private static final String FILE_OUTPUT_DIR = "E:\\test";
 
 	private static final EngineFileType FILE_OUTPUT_TYPE = EngineFileType.XLS; // 可以设置
-																				// Word 或者
-																				// Markdown
-																				// 格式
+
+	// Word 或者
+	// Markdown
+	// 格式
 
 	private static final String DOC_FILE_NAME = "数据库文档";
 
@@ -89,10 +90,10 @@ public class ScrewTest {
 		hikariConfig.setUsername(DB_USERNAME);
 		hikariConfig.setPassword(DB_PASSWORD);
 		hikariConfig.addDataSourceProperty("useInformationSchema", "true"); // 设置可以获取
-																			// tables
-																			// remarks 信息
+		// tables
+		// remarks 信息
 		hikariConfig.addDataSourceProperty("characterEncoding", "UTF-8"); // 设置可以获取 tables
-																			// remarks 信息
+		// remarks 信息
 		// 创建数据源
 		return new HikariDataSource(hikariConfig);
 	}
