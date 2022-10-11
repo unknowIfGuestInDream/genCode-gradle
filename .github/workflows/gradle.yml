@@ -30,12 +30,16 @@ jobs:
       uses: actions/setup-java@v3
       with:
         java-version: ${{ matrix.Java }}
-        distribution: temurin
+        distribution: adopt
         cache: gradle
+    #window环境checkFormat 命令会有不一样的结果，所以排除windows环境
+    - name: Check spring-javaformat
+      if: ${{ matrix.os != 'windows-latest' }}
+      run: gradle checkFormat
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
 
     - name: Execute Gradle build
-      run: bash ./gradlew build -x test
+      run: bash ./gradlew build -x test -Pnocheck --continue
 

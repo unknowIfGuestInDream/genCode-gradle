@@ -1,7 +1,7 @@
 plugins {
     id 'org.springframework.boot' version '2.7.4'
     id 'io.spring.dependency-management' version '1.0.14.RELEASE'
-    id 'io.spring.javaformat:spring-javaformat-gradle-plugin' version '0.0.27'
+    id "io.spring.javaformat" version "0.0.35"
     id 'java'
 }
 
@@ -15,7 +15,7 @@ configurations {
     }
 }
 
-bootJar{
+bootJar {
     archiveFileName = 'gen.jar'
 }
 
@@ -46,3 +46,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+tasks.forEach(t->{
+    if(t.getName().matches("checkFormat[A-Za-z]*")){
+        t.onlyIf {!project.hasProperty('nocheck')}
+    }
+})

@@ -15,12 +15,13 @@ import java.util.Arrays;
  */
 @Slf4j
 public class AsyncExceptionHandler implements AsyncUncaughtExceptionHandler {
-    @Override
-    public void handleUncaughtException(Throwable ex, Method method, Object... params) {
-        log.error("Async method has uncaught exception, params:{}" + Arrays.toString(params));
-        log.error("Exception message - " + ex.getMessage());
-        log.error("Method name - " + method.getName());
-        log.error("Exception :{}", ex);
-    }
-}
 
+	@Override
+	public void handleUncaughtException(Throwable ex, Method method, Object... params) {
+		log.error("Async method has uncaught exception, params:{}" + Arrays.toString(params));
+		log.error("Exception message - " + ex.getMessage());
+		log.error("Method name - " + method.getName());
+		log.error("Exception :{}", ex);
+	}
+
+}
