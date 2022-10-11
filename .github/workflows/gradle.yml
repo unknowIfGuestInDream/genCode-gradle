@@ -32,6 +32,8 @@ jobs:
         java-version: ${{ matrix.Java }}
         distribution: temurin
         cache: gradle
+    - name: Check spring-javaformat
+      run: gradle checkFormatMain
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2
