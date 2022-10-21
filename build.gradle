@@ -5,7 +5,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.newangels'
+group = 'com.tlcsdm'
 version = '3.3'
 sourceCompatibility = '1.8'
 
@@ -16,7 +16,7 @@ configurations {
 }
 
 bootJar {
-    archiveFileName = 'gen.jar'
+    archiveFileName = 'genCode.jar'
 }
 
 repositories {
