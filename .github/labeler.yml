@@ -1,0 +1,23 @@
+enhancement:
+  - any: ['src/main/**', '!src/main/resources/lib']
+
+test:
+  - src/test/**
+
+workflow:
+  - .github/**
+
+documentation:
+  - CHANGELOG.md
+  - LICENSE
+  - README.md
+  - docs/**
+
+dependencies:
+  - build.gradle
+  - settings.gradle
+  - src/main/resources/lib
+  - gradle/**
+  - .springjavaformatconfig
+  - gradlew
+  - gradlew.bat
