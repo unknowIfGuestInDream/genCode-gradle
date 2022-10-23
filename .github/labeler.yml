@@ -21,3 +21,8 @@ dependencies:
   - .springjavaformatconfig
   - gradlew
   - gradlew.bat
+
+automerge:
+  - all: [ 'README.md' ]
+  - all: [ 'CHANGELOG.md' ]
+  - all: [ '.github/**' ]
