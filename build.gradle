@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.7.5'
     id 'io.spring.dependency-management' version '1.1.0'
     id "io.spring.javaformat" version "0.0.35"
+    id "org.sonarqube" version "3.4.0.2513"
     id 'java'
 }
 
@@ -53,3 +54,11 @@ tasks.forEach(t->{
         t.onlyIf {!project.hasProperty('nocheck')}
     }
 })
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "unknowIfGuestInDream_genCode-gradle"
+        property "sonar.organization", "unknowifguestindream"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
+}
