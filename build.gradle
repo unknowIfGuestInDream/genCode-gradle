@@ -36,7 +36,7 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.0.8'
     implementation 'mysql:mysql-connector-java:5.1.49'
-    implementation 'com.tlcsdm:tlcsdm-common:1.3.3'
+    implementation 'com.tlcsdm:tlcsdm-common:1.3.4'
     implementation fileTree(dir: 'src/main/resources/lib', includes: ['*jar'])
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
