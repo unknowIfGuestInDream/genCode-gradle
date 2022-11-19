@@ -10,24 +10,8 @@ name: Java CI with Gradle
 on:
   push:
     branches: [ "master" ]
-    paths-ignore:
-      - 'docs/**'
-      - '.github/**'
-      - 'README.md'
-      - '.gitignore'
-      - '.gitattributes'
-      - 'CHANGELOG.md'
-      - '.springjavaformatconfig'
   pull_request:
     branches: [ "master" ]
-    paths-ignore:
-      - 'docs/**'
-      - '.github/**'
-      - 'README.md'
-      - '.gitignore'
-      - '.gitattributes'
-      - 'CHANGELOG.md'
-      - '.springjavaformatconfig'
 
 permissions:
   contents: read
