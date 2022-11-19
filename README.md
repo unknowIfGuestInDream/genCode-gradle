@@ -1,5 +1,5 @@
 ## 项目介绍
-本项目为代码生成系统genCode-3.3的gradle版本
+本项目为[代码生成系统genCode-3.3](https://github.com/unknowIfGuestInDream/genCode) 的gradle版本
 
 [gradle安装](https://www.tlcsdm.com/#/springBootDemo/deploy/Gradle)
 
@@ -36,7 +36,7 @@ nohup java -jar jar包  >/dev/null 2>&1 &  ## 后台启动(无日志)
 
 druid监控账号密码默认都为admin
 
-运行后访问 [http://localhost:8669/gen](http://localhost:8669/gen)
+运行后访问 [http://localhost:8669/gen/](http://localhost:8669/gen/)
 
 ## 数据库支持
 功能 | oracle | mysql | mariadb | sqlserver
@@ -81,13 +81,6 @@ druid监控账号密码默认都为admin
             <img src=https://avatars.githubusercontent.com/u/57802425?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=梦里不知身是客/>
             <br />
             <sub style="font-size:14px"><b>梦里不知身是客</b></sub>
-        </a>
-    </td>
-    <td align="center" style="word-wrap: break-word; width: 150.0; height: 150.0">
-        <a href=https://github.com/deepsourcebot>
-            <img src=https://avatars.githubusercontent.com/u/60907429?v=4 width="100;"  style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;padding-top:10px" alt=DeepSource Bot/>
-            <br />
-            <sub style="font-size:14px"><b>DeepSource Bot</b></sub>
         </a>
     </td>
 </tr>
