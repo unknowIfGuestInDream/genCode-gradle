@@ -34,7 +34,7 @@ dependencies {
     })
     implementation 'org.springframework.boot:spring-boot-starter-undertow'
     implementation 'org.apache.commons:commons-lang3:3.14.0'
-    implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.0'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.3.1'
     implementation 'mysql:mysql-connector-java:5.1.49'
     implementation 'com.tlcsdm:tlcsdm-common:1.4.5'
     implementation fileTree(dir: 'src/main/resources/lib', includes: ['*jar'])
